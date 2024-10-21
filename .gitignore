@@ -1,0 +1,138 @@
+# Byte-compiled / optimized / DLL files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.eggs/
+dist/
+build/
+*.egg-info/
+.git/
+
+# Sphinx documentation
+docs/_build/
+
+# Django
+local_settings.py
+db.sqlite3
+*.sqlite3
+media/
+static/
+
+# Flask
+instance/
+.flaskenv
+
+# Celery
+celerybeat-schedule
+celeryd.pid
+
+# pytest
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# Logs
+logs/
+*.log
+
+# IDE and editor files
+*.idea/
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Virtual environment
+venv/
+env/
+
+# Miscellaneous
+*.pem
+*.key
+*.crt
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.sqlite
+*.db
+*.md
+*.csv
+*.xls
+*.xlsx
+*.pdf
+*.zip
+*.rar
+*.7z
+*.tar.gz
+*.tar.bz2
+*.tar
+*.gz
+*.bz2
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.ico
+*.mp3
+*.wav
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.ogg
+*.flac
+*.txt
+*.ini
+*.conf
+*.json
+*.xml
+*.yaml
+*.yml
+*.html
+*.css
+*.js
+*.scss
+*.ts
+*.map
+*.vue
+*.jsx
+*.tsx
+*.php
+*.go
+*.cpp
+*.c
+*.h
+*.java
+*.kt
+*.swift
+*.rb
+*.py
+*.sh
+*.bash
+*.bat
+*.cmd
+*.ps1
+*.psm1
+*.ps1xml
+
+# Ignore everything except files specified in `requirements.txt`
+!requirements.txt
+
+# Ignore everything except files specified in `setup.py`
+!setup.py
+
+# Ignore everything except files specified in `Pipfile`
+!Pipfile
+!Pipfile.lock
