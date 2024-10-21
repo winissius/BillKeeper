@@ -136,3 +136,6 @@ env/
 # Ignore everything except files specified in `Pipfile`
 !Pipfile
 !Pipfile.lock
+/.venv/
+/.venv/Lib/
+/.venv/Scripts/
