@@ -38,15 +38,27 @@ async def add_bill_to_db(
     cost: float = Form(...),
     payment_date: str = Form(...),
     payment_type: str = Form(...),
-    payment_recurring: bool = Form(None)
+    payment_recurring: bool = Form(False)
 
 ):
     bill = Bill(description, cost, payment_date, payment_type, payment_recurring)
     controllers.add_bill(bill.json_bill())
 
-    return {
-        'message': 'Added Bill',
-        'json': payment_recurring
-    }
+    return HTMLResponse(content=f"""
+    <html>
+        <head>
+            <title>Bill Added</title>
+            <script type="text/javascript">
+                setTimeout(function() {{
+                    window.location.href = "/";
+                }}, 3000); 
+            </script>
+        </head>
+        <body>
+            <h1>Added Bill: {description}</h1>
+            <p>Redirecionando para a página inicial em 5 segundos...</p>
+        </body>
+    </html>
+    """, status_code=200)
 
 
