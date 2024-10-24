@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add your Bills</title>
+</head>
+<body>
+     <form action="/addBill" method="post">
+            Description: <input type="text" name="description"><br>
+            Cost: <input type="text" name="cost"><br>
+            Payment date: <input type="date" name="payment_date"><br>
+            <label>Payment type:</label>
+              <select name="payment_type">
+                <option value="credit_card">Credit Card</option>
+                <option value="debit_card">Debit Card</option>
+                <option value="money">Money</option>
+                <option value="bank_transfer">Bank Transfer</option>
+              </select><br>
+            Is it a recurring payment? <input type="checkbox" name="payment_recurring"><br>
+            <input type="submit" value="Add">
+        </form>
+</body>
+</html>
