@@ -30,6 +30,14 @@ class Bill:
     def set_payment_recurring(self, new_recurring: bool):
         self._payment_recurring = new_recurring
 
+    def json_bill(self):
+        return {
+            "description": self._description,
+            "cost": self._cost,
+            "payment_date": self._payment_date,
+            "payment_type": self._payment_type,
+            "payment_recurring": self._payment_recurring
+        }
 
 pucpr = Bill("College Payment", 400, "30/10/2024", "credit card", )
 

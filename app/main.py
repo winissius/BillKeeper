@@ -2,6 +2,7 @@ from fastapi import FastAPI, Form
 from pydantic import BaseModel
 from fastapi.responses import HTMLResponse
 from models import Bill
+import controllers
 
 app = FastAPI()
 
@@ -37,14 +38,15 @@ async def add_bill_to_db(
     cost: float = Form(...),
     payment_date: str = Form(...),
     payment_type: str = Form(...),
-    payment_recurring: bool = Form(...)
+    payment_recurring: bool = Form(None)
 
 ):
     bill = Bill(description, cost, payment_date, payment_type, payment_recurring)
+    controllers.add_bill(bill.json_bill())
 
     return {
         'message': 'Added Bill',
-        'json': bill.json_bill()
+        'json': payment_recurring
     }
 
 
