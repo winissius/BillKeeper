@@ -100,7 +100,6 @@ env/
 *.xml
 *.yaml
 *.yml
-*.html
 *.css
 *.js
 *.scss
