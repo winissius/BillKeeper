@@ -39,6 +39,6 @@ class Bill:
             "payment_recurring": self._payment_recurring
         }
 
-pucpr = Bill("College Payment", 400, "30/10/2024", "credit card", )
-
-pucpr.show_info_bill()
+if __name__ == "__main__":
+    test = Bill("College Payment", 1000, "30/10/2024", "credit card", )
+    test.show_info_bill()
